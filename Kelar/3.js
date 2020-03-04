@@ -39,13 +39,54 @@ Rules:
  
  */
 
-var password = '12awd@' //silahkan isi dengan testcase/password
-var encrypted = '' 
+var password = 'holmes@ABCDE' //silahkan isi dengan testcase/password
+var checker = ''
 
-
-//Tulis program disini
 for (var a = 0; a < password.length; a++) {
-      if (password[a] == (1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9)){
-         encrypted += 
-      }
+   if (password[a] == 'a') {
+      checker += 'b'
+   } else if (password[a] === '@') {
+      checker += password[a]
+   } else if (password[a] === '#') {
+      checker += password[a]
+   } else if (password[a] === '$') {
+      checker += password[a]
+   } else if (password[a] === '*') {
+      checker += password[a]
+   } else if (password[a] === 'i') {
+      checker += 'j'
+   } else if (password[a] === 'u') {
+      checker += 'v'
+   } else if (password[a] === 'e') {
+      checker += 'f'
+   } else if (password[a] === 'o') {
+      checker += 'p'
+   } else if (password[a] == 'b' || 'c' || 'd' || 'f' || 'g' || 'h' || 'j' || 'k' || 'l' || 'm' || 'n' || 'p' || 'q' || 'r' || 's' || 't' || 'v' || 'w' || 'x' || 'y' || 'z') {
+      checker += '<'
+   } else if (password[a] === '0') {
+      checker += '1'
+   } else if (password[a] === '1') {
+      checker += '2'
+   } else if (password[a] === '2') {
+      checker += '3'
+   } else if (password[a] === '3') {
+      checker += '4'
+   } else if (password[a] === '4') {
+      checker += '5'
+   } else if (password[a] === '5') {
+      checker += '6'
+   } else if (password[a] === '6') {
+      checker += '7'
+   } else if (password[a] === '7') {
+      checker += '8'
+   } else if (password[a] === '8') {
+      checker += '9'
+   } else if (password[a] === '9') {
+      checker += '0'
+   } else {
+      checker += password[a]
+   }
 }
+
+console.log(checker)
+//Tulis program disini
